@@ -1,0 +1,75 @@
+$truckLoopDur: 10s;
+
+// colors
+$sky: rgb(135, 190, 255);
+
+$r: rgb(255, 63, 48);
+$rT: rgba(255, 63, 48, 0);
+
+$w: rgba(255, 255, 255, 0.15);
+$wT: rgba(255, 255, 255, 0);
+
+$bk: rgb(40, 40, 40);
+$bkT: rgba(40, 40, 40, 0);
+
+$tbk: rgba(255, 255, 255, 0.15);
+$tbkT: rgba(0, 0, 0, 0);
+
+$br: rgb(127, 91, 88);
+$brT: rgba(127, 91, 88, 0);
+
+$dbr: rgb(100, 50, 50);
+$dbrT: rgba(100, 50, 50, 0);
+
+$dgy: rgb(80, 80, 80);
+$dgyT: rgba(80, 80, 80, 0);
+
+$lgy: rgb(160, 160, 160);
+$lgyT: rgba(160, 160, 160, 0);
+
+*, *:before, *:after {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 20px;
+}
+
+body {
+  background: $sky;
+  color: #222;
+  font: 1em "Anton", sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* all */
+.progress-container, .progress-state,
+.dump-truck, .dump-truck div {
+  position: absolute;
+}
+
+/* progress */
+$truckRounds: 2;
+$loops: 2;
+
+.progress-container, .progress-box {
+  width: 6em;
+}
+
+.progress-container {
+  top: 50%;
+  left: calc(50% - 3em);
+  height: 7.5em;
+  z-index: 2;
+}
+
+.progress-box {
+  border-radius: 0 0 0.5em 0.5em;
+  border: 0.5em solid $dgy;
+  border-top: 0;
+  height: 40em;
+}
