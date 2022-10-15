@@ -140,3 +140,40 @@ $loops: 2;
       animation: spinR $truckLoopDur $truckLoopDur/2 ease-in-out $truckRounds;
     }
 }
+
+.front {
+  background:
+    linear-gradient($r,$r) 2.7em 0.75em / 0.2em 2em,
+    linear-gradient($lgy,$lgy) 1em 3.5em / 0.8em 0.2em,
+    linear-gradient($dgy,$dgy) 3.3em 6.1em / 0.5em 0.2em,
+    linear-gradient($dgy,$dgy) 3.3em 6.8em / 0.5em 0.2em,
+    linear-gradient(83deg,$bk 49%,$bkT 50%) 1em 0.75em / 5em 2em,
+    radial-gradient(3.4em 4.6em at 33% 100%,$wT 49%,$w 50%,$w 59%,$wT 60%),
+    radial-gradient(3.4em 4.6em at 33% 100%,$rT 49%,$r 50%);
+  background-repeat: no-repeat;
+  border-radius: 10% 20% 5% 25% / 10% 50% 5% 100%;
+  top: 0.4em;
+  left: 10.1em;
+  width: 3.9em;
+  height: 7em;
+}
+
+.bucket {
+  background:
+    repeating-linear-gradient(95deg,$tbkT,$tbkT 0.85em,$tbkT 0.9em,$tbk 1.75em,$tbk 1.8em) 0.1em 1.6em / 7.8em 3.2em,
+    linear-gradient($dgy,$dgy) 8em 0 / 2em 0.5em,
+    linear-gradient(95deg,$dgyT 0.45em,$dgy 0.5em,$dgy 1.45em,$dgyT 1.5em) 7em 0 / 1.6em 5.5em,
+    linear-gradient($dgyT 1em,$dgy 1em) 0 0 / 7.5em 5.5em;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 25% / 0 0 0 15%;
+  top: 0;
+  left: 0;
+  width: 10em;
+  height: 5.5em;
+  transform: rotate(0deg);
+  transform-origin: 22% 100%;
+}
+
+.dirt {
+  
+}
