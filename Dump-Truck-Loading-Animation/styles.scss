@@ -123,4 +123,20 @@ $loops: 2;
       animation: spinL $truckLoopDur ease-in-out $truckRounds;
     }
   }
+  &:last-of-type {
+    animation: backupR $truckLoopDur $truckLoopDur/2 linear $truckRounds;
+    left: 50%;
+    transform: translateX(5em);
+    .bucket {
+      animation: dump $truckLoopDur $truckLoopDur/2 linear $truckRounds;
+    }
+    .dirt {
+      animation: rotateDirt $truckLoopDur $truckLoopDur/2 linear $truckRounds;
+    }
+    .dirt-spill {
+      animation: pourDirt $truckLoopDur $truckLoopDur/2 linear $truckRounds;
+    }
+    .wheel {
+      animation: spinR $truckLoopDur $truckLoopDur/2 ease-in-out $truckRounds;
+    }
 }
